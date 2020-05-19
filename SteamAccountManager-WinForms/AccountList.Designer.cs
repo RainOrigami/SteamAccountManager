@@ -112,6 +112,7 @@
             // btnRemoveAccount
             // 
             this.btnRemoveAccount.Location = new System.Drawing.Point(142, 327);
+            this.btnRemoveAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRemoveAccount.Name = "btnRemoveAccount";
             this.btnRemoveAccount.Size = new System.Drawing.Size(155, 32);
             this.btnRemoveAccount.TabIndex = 4;
