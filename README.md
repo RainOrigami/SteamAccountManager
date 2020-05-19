@@ -13,10 +13,10 @@ This application allows you to quickly switch between your Steam accounts with t
 2. Open the Steam Account Manager Window (double click the icon in the notification area)
 3. Add all your accounts to the Steam Account Manager
 4. For each account in the Steam Account Manager:
-4. 1. Select the account name
-4. 2. Click on Login
-4. 3. Do the login (password, authenticator) and check [X] Remember my password in Steam
-4. 4. Repeat 4.i. - 4.iv. for all your accounts
+   1. Select the account name
+   2. Click on Login
+   3. Do the login (password, authenticator) and check [X] Remember my password in Steam
+   4. Repeat 4.i. - 4.iv. for all your accounts
 
 ## Usage
 
