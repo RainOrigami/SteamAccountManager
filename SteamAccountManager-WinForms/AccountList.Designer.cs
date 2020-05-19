@@ -35,8 +35,8 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.notifyIconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRemoveAccount = new System.Windows.Forms.Button();
             this.notifyIconMenu.SuspendLayout();
             this.SuspendLayout();
@@ -50,14 +50,14 @@
             this.lbAccountList.ItemHeight = 20;
             this.lbAccountList.Location = new System.Drawing.Point(12, 12);
             this.lbAccountList.Name = "lbAccountList";
-            this.lbAccountList.Size = new System.Drawing.Size(599, 304);
+            this.lbAccountList.Size = new System.Drawing.Size(412, 64);
             this.lbAccountList.TabIndex = 0;
             this.lbAccountList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbAccountList_MouseDoubleClick);
             // 
             // btnAddAccount
             // 
             this.btnAddAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddAccount.Location = new System.Drawing.Point(12, 327);
+            this.btnAddAccount.Location = new System.Drawing.Point(12, 93);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(124, 32);
             this.btnAddAccount.TabIndex = 1;
@@ -68,7 +68,7 @@
             // btnLogin
             // 
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.Location = new System.Drawing.Point(490, 327);
+            this.btnLogin.Location = new System.Drawing.Point(303, 93);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(121, 32);
             this.btnLogin.TabIndex = 2;
@@ -93,14 +93,6 @@
             this.notifyIconMenu.Name = "notifyIconMenu";
             this.notifyIconMenu.Size = new System.Drawing.Size(131, 68);
             // 
-            // quitToolStripMenuItem
-            // 
-            this.quitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(130, 32);
-            this.quitToolStripMenuItem.Text = "&Quit";
-            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
-            // 
             // showToolStripMenuItem
             // 
             this.showToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,10 +101,18 @@
             this.showToolStripMenuItem.Text = "&Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
+            // quitToolStripMenuItem
+            // 
+            this.quitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(130, 32);
+            this.quitToolStripMenuItem.Text = "&Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
             // btnRemoveAccount
             // 
-            this.btnRemoveAccount.Location = new System.Drawing.Point(142, 327);
             this.btnRemoveAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRemoveAccount.Location = new System.Drawing.Point(142, 93);
             this.btnRemoveAccount.Name = "btnRemoveAccount";
             this.btnRemoveAccount.Size = new System.Drawing.Size(155, 32);
             this.btnRemoveAccount.TabIndex = 4;
@@ -125,12 +125,13 @@
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 369);
+            this.ClientSize = new System.Drawing.Size(436, 135);
             this.Controls.Add(this.btnRemoveAccount);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnAddAccount);
             this.Controls.Add(this.lbAccountList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(458, 191);
             this.Name = "AccountList";
             this.Text = "Steam Account List";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AccountList_FormClosing);
